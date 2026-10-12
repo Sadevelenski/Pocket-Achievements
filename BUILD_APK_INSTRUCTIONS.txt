@@ -1,0 +1,12 @@
+COMO GENERAR EL APK EN GITHUB ACTIONS
+
+1. Crea un repositorio nuevo en GitHub.
+2. Descomprime este proyecto y sube TODO el contenido de la carpeta AchievementsApp a la raiz del repositorio (incluida la carpeta oculta .github).
+3. En GitHub, entra en la pestaña Actions.
+4. Selecciona "Build Android APK" y pulsa "Run workflow". Si no aparece, confirma que subiste la carpeta .github/workflows/build-apk.yml.
+5. Espera a que termine el trabajo. Debe quedar verde si la compilacion tuvo exito.
+6. En la ejecucion, baja hasta Artifacts y descarga "Achievements-debug-apk".
+7. Descomprime ese archivo. Dentro estara app-debug.apk.
+8. Envia el APK al telefono e instalalo. Si Android lo solicita, permite instalar aplicaciones de esa fuente.
+
+Nota: esta es una compilacion debug para pruebas, no una version firmada para publicar en Play Store.
